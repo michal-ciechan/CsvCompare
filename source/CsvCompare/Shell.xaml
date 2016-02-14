@@ -4,9 +4,13 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CsvCompare"
+        xmlns:prism="http://prismlibrary.com/"
         mc:Ignorable="d"
         Title="Shell" Height="300" Width="300">
-    <Grid>
+    <DockPanel>
+        <ContentControl DockPanel.Dock="Top" prism:RegionManager.RegionName="ToolbarRegion" />
+        <ContentControl prism:RegionManager.RegionName="MainRegion" />
         
-    </Grid>
+        
+    </DockPanel>
 </Window>
